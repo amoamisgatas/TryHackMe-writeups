@@ -45,7 +45,7 @@ Exfiltration Protocol: DNS (DNS Tunneling)
 Inspected active outbound sessions on non-standard/suspicious ports to detect the C2 communication channel.
 Finding: 1.1.1.X:XXXX (C2 Socket)
 
-## Indicators of Compromise (IOCs) & Summary
+# Indicators of Compromise (IOCs) & Summary
 
 Affected Internal Host: 10.10.10.X
 C2 Channel Endpoint: 1.1.1.X:XXXX
@@ -59,6 +59,8 @@ Exfiltration Protocol: DNS
 
 # Remediation & Defense Recommendations
 
-## Dynamic ARP Inspection (DAI): Enable DAI and DHCP Snooping on network switches to mitigate Man-in-the-Middle (MITM) ARP poisoning attacks.
+Dynamic ARP Inspection (DAI): Enable DAI and DHCP Snooping on network switches to mitigate Man-in-the-Middle (MITM) ARP poisoning attacks.
 
-## WAF & User-Agent Filtering: Configure Web Application Firewalls (WAF) to drop traffic presenting known exploit signatures or anomalous script-based User-Agents.# DNS Exfiltration Defense: Implement DNS monitoring to detect high-frequency TXT/A query patterns and block unapproved dynamic DNS domains.
+WAF & User-Agent Filtering: Configure Web Application Firewalls (WAF) to drop traffic presenting known exploit signatures or anomalous script-based User-Agents.
+
+DNS Exfiltration Defense: Implement DNS monitoring to detect high-frequency TXT/A query patterns and block unapproved dynamic DNS domains.
